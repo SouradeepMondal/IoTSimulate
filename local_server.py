@@ -107,7 +107,7 @@ def trigger_dehumidifier(humidity):
         update_device_state("dehumidifier", "OFF")
     else:
         # If humidity is within range, assume it stays off/idle
-        update_device_state("dehumidifier", "IDLE")
+        update_device_state("dehumidifier", "OFF")
 
 
 def adjust_ac(temperature):
@@ -134,7 +134,7 @@ def adjust_light_brightness(light_level):
         log_action(message)
         update_device_state("light", brightness_level)
     elif light_level > THRESHOLDS["light"]["max"]:
-        brightness_level = "50%"
+        brightness_level = "10%"
         message = f"Light level high ({light_level} lux). Dimming light to {brightness_level} brightness."
         log_action(message)
         update_device_state("light", brightness_level)
