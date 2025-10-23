@@ -1,4 +1,4 @@
-# IoT Simulator -> Temperature and Humidity
+# IoT Simulator -> Temperature, Humidity and Light
 
 Project to simulate the working of an IoT application. Done for `CS534 Internet of Things` at BIT Mesra.
 
